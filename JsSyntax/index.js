@@ -17,6 +17,7 @@ console.log(numbers[0]); // Output: 1
 // Modifying array elements
 fruits.push("grape");
 numbers.pop();
+firstFruit = fruits.shift();
 
 // Creating strings
 let greeting = "Hello, ";
