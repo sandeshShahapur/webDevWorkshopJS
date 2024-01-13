@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Toggle</title>
+    <style>
+        .accordion-section {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion-section" onclick="toggleAccordion('content1')">Section 1</div>
+    <div id="content1" style="display: none;">
+        <p>Content for section 1...</p>
+    </div>
+
+    <div class="accordion-section" onclick="toggleAccordion('content2')">Section 2</div>
+    <div id="content2" style="display: none;">
+        <p>Content for section 2...</p>
+    </div>
+
+    <script>
+        function toggleAccordion(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

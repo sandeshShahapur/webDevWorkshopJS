@@ -1,0 +1,22 @@
+<!-- HTML -->
+<div id="image-gallery">
+    <img src="image1.jpg" onclick="openLightbox('image1.jpg')" alt="Image 1">
+    <img src="image2.jpg" onclick="openLightbox('image2.jpg')" alt="Image 2">
+    <img src="image3.jpg" onclick="openLightbox('image3.jpg')" alt="Image 3">
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-image" src="" alt="Lightbox Image">
+</div>
+
+<script>
+    // JavaScript
+    function openLightbox(image) {
+        document.getElementById('lightbox-image').src = image;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
